@@ -10,7 +10,9 @@ class Stack:
         if len(self.stack) == 0:
             print("Nothing To Pop \n")
         else:
+            x = self.stack[-1]
             self.stack = self.stack[:-1]
+            return x
             
     def last(self):
         return self.stack[-1]
@@ -18,16 +20,8 @@ class Stack:
     def length(self):
         return len(self.stack)
 
-
-x = Stack()
-x.push(10)
-print(x.length())
-print(x.last())
-x.push(20)
-print(x.length())
-print(x.last())
-x.pop()
-print(x.length())
-print(x.last())
-x.pop()
-x.pop()
+def main():
+    pass
+    
+if __name__ == "__main__":
+    main()
